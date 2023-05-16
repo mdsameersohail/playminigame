@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/1d64584c26.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body>
+    <div class='bg-container'>
+        <nav class='nav'>
+            <div class='nav-cont'>
+                <div class='nav-logo'>
+                    <a href='#Home' class='Heading-logo' id='PlayMiniHome'>
+                        <h1>PlayMini</h1>
+                    </a>
+                    <a href='#Home' id='logoHome'><img src="https://www.freepnglogos.com/uploads/games-png/games-file-wpvg-icon-svg-wikipedia-31.png" class='logo-Image' /></a>
+                </div>
+                <div>
+                    <a href='#'><i class="fa-solid fa-bars icon" id='navIcon'></i></a>
+                </div>
+                <ul class='nav-items-container'>
+                    <li class='nav-item'><a href='#Home' id='itemHome' class='nav-item-heading nav-link'>Home</a></li>
+                    <li class='nav-item'><a href='#aboutUs' id='itemAbout' class='nav-item-heading nav-link'>About</a></li>
+                    <li class='nav-item'><a href='#contactUs' id='itemContact' class='nav-item-heading nav-link'>Contact</a></li>
+                </ul>
+            </div>
+            <div class='nav-drop' id='navDrop'>
+                <div class='nav-drop-cont'>
+                    <a href='#Home' id='dropHome' class='nav-item-heading'>Home</a>
+                </div>
+                <div class='nav-drop-cont'>
+                    <a href='#aboutUs' id='dropAbout' class='nav-item-heading'>About</a>
+                </div>
+                <div class='nav-drop-cont'>
+                    <a href='#contactUs' id='dropContact' class='nav-item-heading'>Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class='bottom-container' id='Home'>
+            <h1 class='mini-heading'>MINI GAMES</h1>
+            <div class='card-cont'>
+                <div class='card card-add-game'>
+                    <h1 class='card-Heading head'>Addition Game</h1>
+                    <p class='para'>Random two numbers are genereted you have to guess the correct answer of those two numbers</p>
+                    <button class='button' id='addBtn'>Play</button>
+                </div>
+                <div class='card card-sub-game'>
+                    <h1 class='card-Heading head'>Subtraction Game</h1>
+                    <p class='para'>Random two numbers are genereted you have to guess the correct answer of those two numbers</p>
+                    <button class='button' id='subBtn'>Play</button>
+                </div>
+                <div class='card card-multi-game'>
+                    <h1 class='card-Heading head'>Multiplication Game</h1>
+                    <p class='para'>Random two numbers are genereted you have to guess the correct answer of those two numbers</p>
+                    <button class='button' id='multiBtn'>Play</button>
+                </div>
+                <div class='card card-div-game'>
+                    <h1 class='card-Heading head'>Division Game</h1>
+                    <p class='para'>Random two numbers are genereted you have to guess the correct answer of those two numbers</p>
+                    <button class='button' id='divBtn'>Play</button>
+                </div>
+            </div>
+            <div class='about-cont' id='aboutUs'>
+                <h1>About Us</h1>
+                <p>We are a team of passionate specialists with an extensive knowledge of the video game industry. Our task is to make sure that players will be able to enjoy unique and unforgettable games. We’re not just a game company – we’re your game partner!</p>
+                <h1>Our goals</h1>
+                <p>Our goal is to support unique games and ambitious, skilled studios and to get wonderful games in front of players. We want to make great game ideas become a reality and so that everyone can enjoy them. We care both about developers and communicating with players to give you the best experience—so don’t hesitate, and go all in!</p>
+            </div>
+        </div>
+        <div class="text-center game-container" id='Game'>
+            <div class='back-arrow-cont'>
+                <i class="fa-solid fa-arrow-left back-arrow" id='arrowBtn'> Back</i>
+            </div>
+            <div class='imgGame-cont'>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/sum-of-two-numbers-img.png" class="image" />
+            </div>
+            <div class="bg-container-game-add" id='addGame'>
+                <div class='operatorGame-cont'>
+                    <span class="number " id="firstNumber"></span>
+                    <span class="operator">+</span>
+                    <span class="number " id="secondNumber"></span>
+                    <span class="operator">=</span>
+                    <input class="user-input" type="text" id="userInput" />
+                </div>
+                <div class="gameBtn-cont">
+                    <button id="checkButtonAdd" class="checkBtn" onclick="Check()">
+                        Check
+                    </button>
+                    <button id="restartButtonAdd" class="checkBtn" onclick="ResetAdd()">
+                        Restart
+                    </button>
+                </div>
+                <p class="game-result" id="gameResult"></p>
+            </div>
+            <div class="bg-container-game-add" id='subGame'>
+                <div class='operatorGame-cont'>
+                    <span class="number " id="firstNumberSub"></span>
+                    <span class="operator">-</span>
+                    <span class="number " id="secondNumberSub"></span>
+                    <span class="operator">=</span>
+                    <input class="user-input" type="text" id="userInputSub" />
+                </div>
+                <div class="gameBtn-cont">
+                    <button id="checkButtonSub" class="checkBtn" onclick="CheckSub()">
+                        Check
+                    </button>
+                    <button id="restartButtonSub" class="checkBtn" onclick="ResetSub()">
+                        Restart
+                    </button>
+                </div>
+                <p class="game-result" id="gameResultSub"></p>
+            </div>
+            <div class="bg-container-game-add" id='multiGame'>
+                <div class='operatorGame-cont'>
+                    <span class="number " id="firstNumberMulti"></span>
+                    <span class="operator">*</span>
+                    <span class="number " id="secondNumberMulti"></span>
+                    <span class="operator">=</span>
+                    <input class="user-input" type="text" id="userInputMulti" />
+                </div>
+                <div class="gameBtn-cont">
+                    <button id="checkButtonMulti" class="checkBtn" onclick="CheckMulti()">
+                        Check
+                    </button>
+                    <button id="restartButtonMulti" class="checkBtn" onclick="ResetMulti()">
+                        Restart
+                    </button>
+                </div>
+                <p class="game-result" id="gameResultMulti"></p>
+            </div>
+            <div class="bg-container-game-add" id='divGame'>
+                <div class='operatorGame-cont'>
+                    <span class="number " id="firstNumberDiv"></span>
+                    <span class="operator">/</span>
+                    <span class="number " id="secondNumberDiv"></span>
+                    <span class="operator">=</span>
+                    <input class="user-input" type="text" id="userInputDiv" />
+                </div>
+                <div class="gameBtn-cont">
+                    <button id="checkButtonDiv" class="checkBtn" onclick="CheckDiv()">
+                        Check
+                    </button>
+                    <button id="restartButtonDiv" class="checkBtn" onclick="ResetDiv()">
+                        Restart
+                    </button>
+                </div>
+                <p class="game-result" id="gameResultDiv"></p>
+            </div>
+        </div>
+        <div class='bottom-grid' id='contactUs'>
+            <div class='nav-logo'>
+                <a href='#Home' class='Heading-logo contact-logo-heading'>
+                    <h1 class='contact-headding'>PlayMini</h1>
+                </a>
+                <a href='#Home'><img src="https://www.freepnglogos.com/uploads/games-png/games-file-wpvg-icon-svg-wikipedia-31.png" class='logo-Image contact-image' /></a>
+            </div>
+            <p class='contact-headding'>contact: <a href='#'>mdsameersohail786@gmail.com</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

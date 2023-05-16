@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #d2dabf;
+    height: 10%;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.logo-Image {
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+    margin-left: 2px;
+}
+
+.icon {
+    margin-top: 18px;
+    color: black;
+    margin-right: 12px;
+}
+
+.Heading-logo {
+    font-family: "Garamond", Serif;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item-heading {
+    font-family: "Garamond", Serif;
+    font-size: 18px;
+    margin: 18px;
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-items-container {
+    display: none;
+    padding: 5px;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -1px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-drop-cont {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    padding: 8px;
+}
+
+.nav-drop {
+    display: none;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-drop-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-container {
+    background-image: url('https://wallpaperaccess.com/full/5507512.jpg');
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mini-heading {
+    font-family: "Georgia", Serif;
+    color: white;
+}
+
+.card {
+    background-color: #262525;
+    border-radius: 6px;
+    height: 290px;
+    width: 190px;
+    margin: 8px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-Heading {
+    font-family: "Roboto";
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #1d1d1d;
+    transform: translateX(100px);
+    transition: transform 0.5s;
+}
+
+
+.para {
+    color: #fff;
+}
+
+.button {
+    background-color: #F85E6B;
+    border-radius: 6px;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Lobster';
+}
+
+.bottom-grid {
+    background-color: black;
+    height: 100%;
+    padding: 6px;
+}
+
+.contact-logo-heading {
+    color: white;
+}
+
+.contact-image {
+    margin-top: 10px;
+    height: 28px;
+    width: 28px;
+}
+
+.contact-headding {
+    color: white;
+    font-size: 20px;
+}
+
+.about-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.homeEl {
+    display: none;
+}
+
+.game-container {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image {
+    width: 360px;
+    height: 280px;
+}
+
+.bg-container-game-add {
+    background-color: #f5f7fa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.number {
+    color: #323f4b;
+    background-color: #cbd2d9;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #e4e7eb;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 6px;
+    height: 100%;
+}
+
+.operator {
+    color: #c4c4c4;
+    font-family: "Roboto";
+    font-size: 40px;
+}
+
+.user-input {
+    text-align: center;
+    color: #323f4b;
+    background-color: #cbd2d9;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    width: 142px;
+    height: 60px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #e4e7eb;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.game-result {
+    color: #ffffff;
+    background-color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.gameBtn-cont {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: none;
+}
+
+.checkBtn {
+    height: 30px;
+    width: 120px;
+    background-color: lightblue;
+    margin-left: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.imgGame-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.operatorGame-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.back-arrow-cont {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.back-arrow {
+    cursor: pointer;
+}
+
+@media screen and (min-width:767px) {
+    .icon {
+        display: none;
+    }
+
+    .nav-items-container {
+        display: flex;
+    }
+
+    .bottom-container {
+        background-image: url('https://gray-kait-prod.cdn.arcpublishing.com/resizer/gFVHNXdJUluaIUTSWG6jl7ueI4M=/1200x600/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/4Z7W2K6IRVFM7BFZI2HX6CURTE.png');
+        background-size: cover;
+        height: 100%;
+    }
+
+    .card.card-add-game:hover {
+        background-color: #1da1f2;
+    }
+
+    .card.card-sub-game:hover {
+        background-color: #45647D;
+    }
+
+    .card.card-multi-game:hover {
+        background-color: #77BD82;
+    }
+
+    .card.card-div-game:hover {
+        background-color: #9F5877;
+    }
+
+    .card:hover .head {
+        transform: translateX(-1%);
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .card-add-game {
+        background-color: #1da1f2;
+    }
+
+    .card-sub-game {
+        background-color: #45647D;
+    }
+
+    .card-multi-game {
+        background-color: #77BD82;
+    }
+
+    .card-div-game {
+        background-color: #9F5877;
+    }
+
+    .card-Heading {
+        transform: translateX(1px);
+        transition: transform 0.5s;
+    }
+}
